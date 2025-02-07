@@ -1,3 +1,8 @@
+* {
+    --blue: #338ad2;
+    --grey: #dfe5ee;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5,16 +10,43 @@ html, body {
 
 body {
     display: flex;
+    font-family: 'Roboto', sans-serif;
 }
 
 div {
-    border: 1px solid red;
+    border: 1px solid black;
+}
 
+svg {
+    fill: white;
 }
 
 #sidebar{
+    color: white;
+    background-color: var(--blue) ;
     width: 20vw;
     height: 100vh;
+}
+
+.sidebar-container {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+}
+
+.sidebar-container > p {
+    margin-left: 1rem;
+}
+
+.sidebar-icon {
+    height: 100%;
+    width: 3rem;
+}
+
+.sidebar-icon > svg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #main {
@@ -25,22 +57,25 @@ div {
 }
 
 #header {
-    height: 15vh;
+    height: 20vh;
+}
+
+#header-upper {
+    width: 100%;
+    height: 50%
+}
+
+#header-lower {
+    width: 100%;
+    height: 50%
 }
 
 #main-content {
+    background-color: var(--grey);
     display: flex;
     height: 85vh;
 }
 
-#projects {
-    width: 100%;
-    height: 100%;
-    display: grid;
-}
 
-#project {
-    margin: 1rem;
-}
 
 
